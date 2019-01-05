@@ -9,5 +9,4 @@ This is alpine latest update and upgrade
 ```
 openrc htop curl git zip unzip
 ```
-
 &copy; 2019[Fusengine](http://fusengine.com)
