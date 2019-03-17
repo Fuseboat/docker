@@ -1,7 +1,9 @@
-FROM alpine:3.8
+FROM alpine:latest
+LABEL version="3.9"
 LABEL maintainer="Fusengine <info@fusengine.ch>"
 
-ENV TIMEZONE "Europe/Zurich"
+ARG ALPINE_VERSION=3.9
+ENV TIMEZONE="Europe/Zurich"
 
 # create repository to script
 RUN mkdir -p /root/.script_base
@@ -12,7 +14,7 @@ COPY scripts_base/ /root/.script_base
 RUN chmod +x /root/.script_base/*
 
 # Run script
-RUN ./root/.script_base/build
+RUN ./root/.script_base/build.sh
 
 # add zsh
 RUN sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
