@@ -14,7 +14,7 @@ COPY scripts_base/ /root/.script_base
 RUN chmod +x /root/.script_base/*
 
 # Run script
-RUN ./root/.script_base/build
+RUN ./root/.script_base/build.sh
 
 # add zsh
 RUN sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
