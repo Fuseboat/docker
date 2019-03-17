@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.7
 LABEL maintainer="Fusengine <info@fusengine.ch>"
 
 ENV TIMEZONE "Europe/Zurich"
@@ -14,7 +14,6 @@ RUN chmod +x /root/.script_base/*
 # Run script
 RUN ./root/.script_base/build
 
-# add zsh
 RUN sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
 
 # Run shell

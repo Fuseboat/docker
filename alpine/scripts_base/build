@@ -6,12 +6,12 @@ source /root/.script_base/base
 # time zone docker
 TIME=${TIMEZONE}
 
-echo "http://dl-cdn.alpinelinux.org/alpine/v3.8/community" >> /etc/apk/repositories
-echo "http://dl-cdn.alpinelinux.org/alpine/v3.8/main" >> /etc/apk/repositories
+#echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
+#echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 
 # Add pack
-PACK_DEFAULT=" vim zsh openrc htop curl git zip unzip openssh autoconf \
-              ca-certificates openssl dpkg-dev dpkg ssmtp xvfb dbus tzdata
+PACK_DEFAULT="  vim zsh openrc htop curl git zip unzip openssh autoconf \
+                ca-certificates openssl dpkg-dev dpkg ssmtp xvfb dbus tzdata
             "
 
 # update system
