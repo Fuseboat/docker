@@ -1,7 +1,9 @@
 FROM alpine:3.8
+LABEL version="3.8"
 LABEL maintainer="Fusengine <info@fusengine.ch>"
 
-ENV TIMEZONE "Europe/Zurich"
+ARG ALPINE_VERSION=3.8
+ENV TIMEZONE="Europe/Zurich"
 
 # create repository to script
 RUN mkdir -p /root/.script_base
