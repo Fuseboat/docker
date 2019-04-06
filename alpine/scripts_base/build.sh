@@ -5,10 +5,10 @@ source /root/.script_base/base.sh
 
 # time zone docker
 TIME=${TIMEZONE}
-ALPINE_VERSION=${ALPINE_VERSION}
+ALPINE_VERSION_REPOS=${ALPINE_VERSION_REPOS}
 
-echo "http://dl-cdn.alpinelinux.org/alpine/v$ALPINE_VERSION/community" >> /etc/apk/repositories
-echo "http://dl-cdn.alpinelinux.org/alpine/v$ALPINE_VERSION/main" >> /etc/apk/repositories
+echo "http://dl-cdn.alpinelinux.org/alpine/v$ALPINE_VERSION_REPOS/community" >> /etc/apk/repositories
+echo "http://dl-cdn.alpinelinux.org/alpine/v$ALPINE_VERSION_REPOS/main" >> /etc/apk/repositories
 
 # Add pack
 PACK_DEFAULT=" vim zsh openrc htop curl git zip unzip openssh autoconf \
