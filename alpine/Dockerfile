@@ -22,7 +22,7 @@ RUN chmod +x ${ROOT_DIR}*
 # Run script
 RUN .${ROOT_DIR}build.sh
 
-# add zsh
+# add zsh Bash
 RUN sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
 
 # Run shell
