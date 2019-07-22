@@ -24,7 +24,7 @@ RUN .${ROOT_DIR}build.sh
 # add zsh Bash
 RUN sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
 
-# Run shell
+# Run Shell
 ENV SHELL /bin/zsh
 
 # RUN ZSH
