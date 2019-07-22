@@ -10,7 +10,6 @@ ARG ALPINE_VERSION_REPOS=latest
 ARG TIMEZONE="Europe/Zurich"
 ARG ROOT_DIR="/root/.script_base/"
 
-
 # create repository to script
 RUN mkdir -p ${ROOT_DIR}
 RUN chmod 777 ${ROOT_DIR}
