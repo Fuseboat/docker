@@ -1,6 +1,6 @@
 # Version Alpine
 ARG IMAGE="alpine"
-ARG VERSION=10
+ARG VERSION=3.10
 
 FROM ${IMAGE}:${VERSION}
 
