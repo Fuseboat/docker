@@ -3,7 +3,11 @@ ARG IMAGE="alpine"
 ARG VERSION=latest
 
 FROM ${IMAGE}:${VERSION}
-LABEL maintainer="Fusengine <info@fusengine.ch>"
+
+LABEL description="Image Base to alpine" \
+    alpine="Alpine daily" \
+    maintainer="Fusengine <info@fusengine.ch>"
+
 
 # Default Config
 ARG ALPINE_VERSION_REPOS=3.9
