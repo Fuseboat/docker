@@ -3,7 +3,10 @@ ARG IMAGE="alpine"
 ARG VERSION=3.7
 
 FROM ${IMAGE}:${VERSION}
-LABEL maintainer="Fusengine <info@fusengine.ch>"
+
+LABEL description="Image Base to alpine" \
+    alpine="Alpine daily" \
+    maintainer="Fusengine <info@fusengine.ch>"
 
 # Default Config
 ARG TIMEZONE="Europe/Zurich"
