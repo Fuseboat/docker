@@ -17,7 +17,7 @@ ARG ROOT_DIR="/root/.script_base/"
 RUN mkdir -p ${ROOT_DIR}
 RUN chmod 777 ${ROOT_DIR}
 
-# Add buildpack script alpine
+# Add build pack script alpine
 COPY scripts_base/ ${ROOT_DIR}
 RUN chmod +x ${ROOT_DIR}*
 
