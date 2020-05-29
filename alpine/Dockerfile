@@ -1,5 +1,5 @@
 # Version Alpine
-ARG IMAGE="alpine"
+ARG IMAGE="arm64v8/alpine"
 ARG VERSION=3.11
 
 FROM $IMAGE:$VERSION
