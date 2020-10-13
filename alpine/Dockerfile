@@ -4,6 +4,7 @@ ARG VERSION=3.11
 
 FROM $IMAGE:$VERSION
 
+# description
 LABEL description="Image Base to alpine" \
     alpine="Alpine daily" \
     maintainer="Fusengine <info@fusengine.ch>"
