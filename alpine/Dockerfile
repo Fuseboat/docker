@@ -1,6 +1,6 @@
 # Version Alpine
 ARG IMAGE="alpine"
-ARG VERSION=3.11
+ARG VERSION=3.12
 
 FROM $IMAGE:$VERSION
 
