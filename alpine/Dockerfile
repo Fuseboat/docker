@@ -8,6 +8,7 @@ LABEL description="Image Base to alpine" \
     alpine="Alpine daily" \
     maintainer="Fusengine <info@fusengine.ch>"
 
+
 # Default Config
 ARG ALPINE_VERSION_REPOS=latest
 ARG TIMEZONE="Europe/Zurich"
